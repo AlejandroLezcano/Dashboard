@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="container-fluid padding-0">
+                <div class="row content-1">
+                    <div class="col-12 flex" >
+                        <img src="images/logo.jpg" class="logo">
+                        <div class="select">
+                            <label >Brand</label>
+                            <select class="form-control" >
+                              <option>JOHNSON'S BABY</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <label >Campaign</label>
+                            <select class="form-control" >
+                              <option>KIDS</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <label >Publisher</label>
+                            <select class="form-control" >
+                              <option>(Miltiple values)</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <label >Objetive</label>
+                            <select class="form-control" >
+                              <option>(All)</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <label>Date</label>
+                            <section class="range-slider">
+                              <span class="rangeValues"></span>
+                              <input value="500" min="500" max="50000" step="500" type="range" style="width: 115px;">
+                              <input value="50000" min="500" max="50000" step="500" type="range" style="width: 115px;">
+                            </section>
+                        </div>
+                        <div class="select">
+                            <input type="text" placeholder="Filters Guide" style="margin-left: 20px;">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="text-principal"> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <div>
+                        <table width="100%">
+                            <tr>
+                                <td style="height: 24px;"></td>
+                            </tr>
+                            <tr>
+                               <td style="height: 24px;"></td> 
+                            </tr>
+                            <tr style="height: 24px;">
+                                <td style="text-align: right;">
+                                    <p style="padding: 3px;">Total</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2  col-lg-1" id="contenedores-tablas">
+                        <p class="titulo-content-1">Budget</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    Actual
+                                </td>
+                                <td>
+                                    Plan
+                                </td>
+                                <td>
+                                    Var %
+                                </td>
+                            </tr>
+                            <tr class="fila2">
+                                <td style="border-left: 1px solid black;">
+                                    $207
+                                </td>
+                                <td>
+                                    $1.400
+                                </td>
+                                <td>
+                                    <img src="images/rojo.png">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2  col-lg-1" id="contenedores-tablas">
+                        <p class="titulo-content-1">Impressions</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    Actual
+                                </td>
+                                <td>
+                                    Plan
+                                </td>
+                                <td>
+                                    Var %
+                                </td>
+                            </tr>
+                            <tr class="fila2">
+                                <td>
+                                    22.2M
+                                </td>
+                                <td>
+                                    79.3M
+                                </td>
+                                <td>
+                                    <img src="images/rojo.png">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2  col-lg-1" id="contenedores-tablas">
+                        <p class="titulo-content-1">CPM</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    Actual
+                                </td>
+                                <td>
+                                    Plan
+                                </td>
+                                <td>
+                                    Var %
+                                </td>
+                            </tr>
+                            <tr class="fila2">
+                                <td>
+                                    $9.33
+                                </td>
+                                <td>
+                                    $17.65
+                                </td>
+                                <td>
+                                    <img src="images/verde.png">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2  col-lg-1" id="contenedores-tablas">
+                        <p class="titulo-content-1">Video Views</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    Actual
+                                </td>
+                                <td>
+                                    Plan
+                                </td>
+                                <td>
+                                    Var %
+                                </td>
+                            </tr>
+                            <tr class="fila2">
+                                <td>
+                                    7.4M
+                                </td>
+                                <td>
+                                    7.4M
+                                </td>
+                                <td>
+                                    <img src="images/amarillo.png">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2  col-lg-1" id="contenedores-tablas">
+                        <p class="titulo-content-1">Clicks</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    Actual
+                                </td>
+                                <td>
+                                    Plan
+                                </td>
+                                <td>
+                                    Var %
+                                </td>
+                            </tr>
+                            <tr class="fila2">
+                                <td>
+                                    585K
+                                </td>
+                                <td>
+                                    91K
+                                </td>
+                                <td>
+                                    <img src="images/verde.png">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2  col-lg-1" id="contenedores-tablas">
+                        <p class="titulo-content-1">CTR</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    Actual
+                                </td>
+                                <td>
+                                    Plan
+                                </td>
+                                <td>
+                                    Var %
+                                </td>
+                            </tr>
+                            <tr class="fila2">
+                                <td>
+                                    2.69%
+                                </td>
+                                <td>
+                                    0.11%
+                                </td>
+                                <td>
+                                    <img src="images/verde.png">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2  col-lg-1" id="contenedores-tablas">
+                        <p class="titulo-content-1">CPC</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    Actual
+                                </td>
+                                <td>
+                                    Plan
+                                </td>
+                                <td>
+                                    Var %
+                                </td>
+                            </tr>
+                            <tr class="fila2">
+                                <td>
+                                    0.35
+                                </td>
+                                <td>
+                                    $15.46
+                                </td>
+                                <td>
+                                    <img src="images/verde.png">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2  col-lg-1" id="contenedores-tablas">
+                        <p class="titulo-content-1">Visits</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    Actual
+                                </td>
+                                <td>
+                                    Plan
+                                </td>
+                                <td>
+                                    Var %
+                                </td>
+                            </tr>
+                            <tr class="fila2">
+                                <td>
+                                    17.00
+                                </td>
+                                <td>
+                                    22,639
+                                </td>
+                                <td>
+                                    <img src="images/rojo.png">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2  col-lg-1" id="contenedores-tablas" >
+                        <p class="titulo-content-1">Visits/Clicks</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    Actual
+                                </td>
+                                <td>
+                                    Plan
+                                </td>
+                                <td>
+                                    Var %
+                                </td>
+                            </tr>
+                            <tr class="fila2">
+                                <td>
+                                    0.00%
+                                </td>
+                                <td>
+                                    25%
+                                </td>
+                                <td>
+                                    <img src="images/rojo.png">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2  col-lg-1" id="contenedores-tablas">
+                        <p class="titulo-content-1">Sales</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    Actual
+                                </td>
+                                <td>
+                                    Plan
+                                </td>
+                                <td>
+                                    Var %
+                                </td>
+                            </tr>
+                            <tr class="fila2">
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    Abc
+                                </td>
+                                <td>
+                                    <img src="images/verde.png">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                 </div>
+            </div>
+        </header>
+
+        <aside>
+            <div class="container-fluid container-grid padding-0" >
+                <div class="item level-1 flex" >
+                    <p class="text-rotate">AWARENESS</p>    
+                    <img src="images/dash.png">
+                    <img src="images/dash.png">
+                    <img src="images/dash.png">
+                    <img src="images/dash.png">
+                    <img src="images/dash.png">
+                </div>
+                
+                <div class="item level-3 flex">
+                    <p class="text-rotate">INTEREST</p>  
+                    <img src="images/dash.png">
+                    <img src="images/dash.png">
+                    <img src="images/dash.png">
+                    <img src="images/dash.png">
+                    
+                </div>
+                <div class="item level-4 flex">
+                    
+                    <p class="text-rotate">INTENT</p>  
+                    <img src="images/dash.png">
+                    <img src="images/dash.png">
+                    <img src="images/dash.png">
+                </div>
+                <div class="item level-5 flex">
+                    <p class="text-rotate">CONVERSION</p>  
+                    <img src="images/dash.png">
+                    <img src="images/dash.png">
+                </div>
+                <div class="item level-5 flex">
+                    <img src="images/dash.png">
+                </div>
+            </div>
+        
+        </aside>
+       
+        <aside>
+            <div class="item level-2">
+                <div style="float: right;display: inline-flex;">
+                    <div>
+                        <p class="titulo-content-1">Reach & Frequency on plataform</p>
+                        <table class="tabla-reach">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        Planned<br> Reach
+                                    </td>
+                                    <td>
+                                        Actual<br>
+                                        Reach
+                                    </td>
+                                    <td>
+                                        Var%
+                                    </td>
+                                    <td>
+                                        Planned<br>
+                                        Freqcy
+                                    </td>
+                                    <td>
+                                        Actual<br>
+                                        Freqcy
+                                    </td>
+                                    <td>
+                                        Var%
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="border: none;">
+                                        FB + IG
+                                    </td>
+                                    <td >
+                                        Junio
+                                    </td>
+                                    <td>
+                                        10.00M
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        3.328
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border: none;">
+                                        
+                                    </td>
+                                    <td>
+                                        Jul
+                                    </td>
+                                    <td>
+                                        24.30M
+                                    </td>
+                                    <td>
+                                        32.03M
+                                    </td>
+                                    <td>
+                                        <img src="images/verde.png">
+                                    </td>
+                                    <td>
+                                        9.014
+                                    </td>
+                                    <td>
+                                        9.580
+                                    </td>
+                                    <td>
+                                        <img src="images/amarillo.png">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <p class="titulo-content-1">Video Retention</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/dash3.png">
+                </div>
+                
+            </div>
+            
+        </aside>
+        
+    </main>
+</body>
+</html>
+
